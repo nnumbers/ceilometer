@@ -77,7 +77,7 @@ class PerDeviceCapacityPollster(PerDeviceDiskPollster):
     sample_name = 'disk.device.capacity'
     sample_unit = 'B'
     sample_stats_key = 'capacity'
-
+    sample_type = sample.TYPE_GAUGE
 
 class PerDeviceAllocationPollster(PerDeviceDiskPollster):
     inspector_method = 'inspect_disk_info'
